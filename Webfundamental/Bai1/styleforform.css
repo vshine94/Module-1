@@ -1,0 +1,38 @@
+h3 {
+    text-align: center ;
+    color: white;
+    background-color: orangered;
+    width: 100%;
+    height: 10%;
+    padding-top:10px;
+}
+fieldset {
+    width: 500px;
+    height:250px;
+    background-color: white;
+    padding-top: 0px;
+    border-collapse: collapse;
+}
+table {
+    width: 100%;
+    text-align: start ;
+    margin-left: 50px;
+}
+body {
+    background-color: rgba(98, 202, 250, 0.726);
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+label {
+    color: rgb(0, 110, 255);
+    margin: 20px;
+}
+td{
+    color: coral;
+}
+p{
+    text-align: center;
+}
+.t1 {
+    margin: 1000px;
+}

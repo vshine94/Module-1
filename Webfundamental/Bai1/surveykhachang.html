@@ -1,0 +1,140 @@
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p,label {
+                color:grey;
+            }
+            b {
+                color: black;
+            }
+            #tb2,tr {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            .td2 {
+                border: 1px solid black;
+                border-collapse: collapse;
+                text-align: center ;
+            }
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <h3>
+                Market Research Survey
+            </h3>
+            <p>Please take a few moments to complete this satisfaction survey.</p>
+            <hr>
+            <p><b>What is your age range?</b></p>
+            <select name="age" id="#">
+                <option value="18-24"> 18 - 24 </option>
+                <option value="24-34"> 24 - 34 </option>
+            </select>
+            <p><b>What is your yearly income range?</b></p>
+            <select name="yearly" id="#">
+                <option value="$0 -  $25,000"> 0 -  $25,000 </option>
+                <option value="$0 -  $25,000"> $25,000 -  $50,000 </option>
+            </select>
+            <p><b>Gender</b></p>
+            <label for="gender"><input type="radio" name="gender"> Male <br> <input type="radio" name="gender"> Female</label>
+            <p><b>Which of following products have your purchased in the last 2 months. Please check all that apply.</b></p>
+            <label for="product"><input type="checkbox"> Product 1</label><br>
+            <label for="product"><input type="checkbox"> Product 2</label><br>
+            <label for="product"><input type="checkbox"> Product 3</label><br>
+            <p><b>How often would you use our product?</b></p>
+            <label for="often"><input type="checkbox"> Daily</label><br>
+            <label for="often"><input type="checkbox"> Weekly</label><br>
+            <label for="often"><input type="checkbox"> Monthly</label><br>
+            <p><b>What would you pay for the new product?</b></p>
+            <label style="color: black;" for="money">$
+                <table style="margin-left: 15px;margin-top:-23px ;">
+                    <tr>
+                        <td><input type="text" name="money" id="#">.</td>
+                        <td><input style="width: 25px;" type="text"></td>
+                    </tr>
+                    <tr style="color:grey">
+                        <td>Dollars</td>
+                        <td>Cents</td>
+                    </tr>
+                </table>
+            </label>
+            <p><b>What features would you like to see in the new product.</b></p>
+            <textarea name="" id="#" cols="150" rows="10"></textarea>
+            <p>Please rate your level of agreement with the following statements.</p>
+            <table id="tb2" >
+                <tr>
+                    <td class="td2"></td>
+                    <td class="td2" style="width: 150px;">Strongly Disagree</td>
+                    <td class="td2" style="width: 150px;">Disagree</td>
+                    <td class="td2" style="width: 150px;">Agree</td>
+                    <td class="td2" style="width: 150px;">Strongly Agree</td>
+                </tr>
+                <tr>
+                    <td class="td2" style="text-align: start;">
+                        Our products are priced faily.
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        1
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        2
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        3
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        4
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="td2" style="text-align: start;">Our products are high quality.</td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        1
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        2
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        3
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        4
+                    </td>
+                    
+                </tr>
+                <tr>
+                    <td class="td2" style="text-align: start;">You would recommend our product to a friend or coworker.</td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        1
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        2
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        3
+                    </td>
+                    <td class="td2">
+                        <input type="radio" name="level"><br>
+                        4
+                    </td>
+                </tr>
+            </table>
+            <input style="width:100px; height:30px; margin-top: 10px;" type="submit" value="Submit">     
+        </fieldset>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <style>
+            
+            fieldset {
+                background-color: rgb(247, 247, 156);
+                width: 500px;
+            }
+            table {
+                /* text-align: start; */
+                /* border: 1px solid red; */
+                width: 90%;
+                padding-bottom: 10px;
+            }
+            h1 {
+                background-color: rgb(161, 245, 236);
+                color: blue;
+                text-align: start;
+            }
+            label {
+                color: blue;
+            }
+            .gt1 {
+                color: black;
+                text-align: center;
+            }
+            td {
+                margin-top: 100px;
+                height: 20px;
+                /* border: 1px solid red; */
+            }           
+        </style>
+    </head>
+    <body>
+        <fieldset>
+            <h1>ĐĂNG KÝ HỌC VIÊN</h1>
+            <table>
+            <tr><td><label for="fullname">Họ và tên <input style="margin-left:30px;" class="gt1" type="text" name="fullname"></label></td></tr>
+            <tr><td><label for="date">Ngày sinh <input style="margin-left:27px" class="gt1" type="text" name="date"></label></td></tr>
+            <tr>
+                <td>
+                    <label for="gioitinh">Giới tính 
+                         <label style="margin-left:35px" class="gt1" for="gioitinh"><input type="radio" name="gioitinh"> Nam</label>
+                         <label class="gt1" for="gioitinh"><input type="radio" name="gioitinh"> Nữ</label>
+                    </label>
+                </td>
+            </tr>
+            <tr><td><label style="vertical-align: 58px;" for="add">Địa chỉ </label><textarea style="margin-left:45px" class="gt1" name="add" id="#" cols="30" rows="5"></textarea></td></tr>
+            <tr>
+                <td>
+                    <label for="class">Lớp 
+                        <select style="margin-left:65px" class="gt1" name="class" id="#">
+                            <option value="chonlop">-Chọn lớp-</option>
+                            <option value="chonlop">PHP</option>
+                            <option value="chonlop">.Net</option>
+                            <option value="chonlop">Javascrip</option>
+                        </select>
+                    </label>
+                </td>
+            </tr>
+            <tr><td><label for="mail">Email <input style="margin-left:55px" class="gt1" type="text" name="mail"></label></td></tr>
+            <tr><td><label for="phone">Điện thoại <input style="margin-left:27px" class="gt1" type="text" name="phone"></label></td></tr>
+            <tr>
+                <td class="gt1">
+                    <input type="submit" value="Đăng ký">
+                    <input type="reset" value="Nhập lại">
+                </td>
+            </tr>
+        </fieldset>
+    </body>
+</html>
