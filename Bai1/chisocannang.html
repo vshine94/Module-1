@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let weight = parseFloat(prompt ("Nhập cân nặng của bạn :"));
+        let height = parseFloat(prompt ("Nhập chiều cao của bạn (m) :"));
+        bmi = weight/(height*height);
+        if (bmi < 18 ) {
+            alert ("Bạn gầy trơ xương, cần bồi bổ thêm !!! chỉ số bmi của bạn là:" + bmi);
+        } else if (18.5 <= bmi < 25 ) {
+            alert ("Bạn hoàn toàn bình thường :D ! chỉ số bmi của bạn là: " + bmi);
+        } else if (25 <= bmi < 30) {
+            alert ("Bạn quá cân nên đi tập gym nhẹ :3! chỉ số bmi của bạn là:" + bmi);
+        } else if (bmi >= 30) {
+            alert ("Bạn bị béo phì chăm tập gym và thể dục và ăn uống khoa học hơn :(! chỉ số bmi của bạn là:" + bmi)
+        }
+    </script>
+</body>
+</html>

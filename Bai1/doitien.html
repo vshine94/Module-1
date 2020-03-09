@@ -1,0 +1,43 @@
+<html></html>
+<head></head>
+<body>
+    <fieldset>
+        <h1>Chuyển đổi tiền tệ</h1>
+        <table>
+            <tr>
+                <td><b>Amount</b></td>
+                <td><b>From Currency</b></td>
+                <td><b>To Currency</b></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="t1">
+                </td>
+                <td>
+                    <select name="area" id="a1">
+                        <option value="vietnam" id="#">Việt Nam</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="area2" id="a2">
+                        <option value="usa" id="#"> USA </option>
+                    </select>
+                </td>
+                <td>
+                    <input type="button" name="Convert" value="Convert" id="con" onclick="Convert()">
+                </td>
+            </tr>
+            <tr>
+                <td id="t2"></td>
+            </tr>
+        </table>
+        <script>
+            function Convert() {
+            let sotien =+ document.getElementById("t1").value;
+                if (document.getElementById("a1").value == "vietnam" && document.getElementById("a2").value == "usa")
+                 document.getElementById("t2").innerHTML = sotien/23000;
+            }    
+        </script>
+    </fieldset>
+</body>

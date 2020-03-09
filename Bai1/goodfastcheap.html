@@ -1,0 +1,50 @@
+<html>
+    <head></head>
+    <body>
+        <label for="good"> Good <input type="checkbox" id="c1" onclick="checkGood()"></label><br>
+        <label for="fast"> Fast <input type="checkbox" id="c2" onclick="checkFast()"></label><br>
+        <label for="cheap"> Cheap <input type="checkbox" id="c3" onclick="checkCheap()"></label>
+        <div id="d1"></div>
+        <script>
+            function checkGood() {
+                let good = document.getElementById('c1').checked;
+                let fast = document.getElementById('c2').checked;
+                let cheap = document.getElementById('c3').checked;
+                // console.log(good,fast,cheap);
+                if(fast && cheap){
+                if(Math.random()>0.5){
+                document.getElementById('c3').checked= false;
+                }else{
+                document.getElementById('c2').checked= false;
+                }
+              }
+            }
+            function checkFast() {
+        let good = document.getElementById('c1').checked;
+        let fast = document.getElementById('c2').checked;
+        let cheap = document.getElementById('c3').checked;
+        // console.log(good,fast,cheap);
+        if(good && cheap){
+            if(Math.random()>0.5){
+                document.getElementById('c1').checked= false;
+            }else{
+                document.getElementById('c3').checked= false;
+            }
+        }
+    }
+            function checkCheap() {
+        let good = document.getElementById('c1').checked;
+        let fast = document.getElementById('c2').checked;
+        let cheap = document.getElementById('c3').checked;
+        // console.log(good,fast,cheap);
+        if(good && fast){
+            if(Math.random()>0.5){
+                document.getElementById('c1').checked= false;
+            }else{
+                document.getElementById('c2').checked= false;
+            }
+        }
+    }
+        </script>
+    </body>
+</html>

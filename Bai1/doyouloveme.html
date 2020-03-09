@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Do you love me ?</h1>
+    <input type="button" id="b1" value="Yes" onclick="clickmouse()">
+    <input type="button" id="b2" value="No" onmouseover="mouseover()" style="position: relative;">
+    <script>
+        function clickmouse() {
+            alert ("Me too <3");
+        }
+        let buttonno = null;
+        function mouseover() {
+        buttonno = document.getElementById("b2");
+        buttonno.style.left = (Math.random()*500)+"px";
+        buttonno.style.top = (Math.random()*500)+"px";       
+        }
+    </script>
+</body>
+</html>
