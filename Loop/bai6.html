@@ -1,0 +1,31 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let num =+ prompt("Nhập vào số nguyên : ");
+            let sum = 0;
+            let a;
+            let p = num;
+            let q = num;
+            for (i=0;i<num;i++){
+                if (num >1){
+                    num = num/10;
+                }
+            }
+            document.write("Số chữ số của "+p+" là " +i+"<br>");
+            while (p > 1){
+                a = p % 10;
+                sum =sum + Math.pow(a,i);
+                p = Math.floor(p/10); 
+                // document.write("số p lúc này là"+p);
+            }
+            if (sum == q){
+                alert ("YES");
+                // document.write(sum+" bằng "+ q)
+            } else {
+                alert("NO");
+                // document.write(sum+" không bằng "+ q)
+            }
+        </script>
+    </body>
+</html>
