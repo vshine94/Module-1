@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num =+ prompt("Nhập số chữ số fibonacci đầu tiên muốn hiển thị")
+        let a = 0;
+        let b = 1;
+        let c;
+        while (num > 0 ){
+            c = a;
+            a = a+b;
+            b = c;
+            document.write(a+"<br>")
+            num--;
+        }
+    </script>
+</body>
+</html>
