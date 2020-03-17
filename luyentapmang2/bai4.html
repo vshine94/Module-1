@@ -1,0 +1,24 @@
+<html>
+    <head></head>
+    <body>
+        <script>
+            let str = "    Lê     Quang     Vũ sdasd ádasdas   ";
+            str = str.trim();
+            let count = 1;
+            for(let i = 0; i < str.length - 1; i++){
+                if(str[i] != " " && str[i+1] == " "){
+                    count ++;
+                }
+            }
+            document.write("Số từ là "+count);
+            // let total = 0;
+            // for(let i=0 ;i < str.length; i++){
+            //     if(str[i] != " "){
+            //         total ++;
+            //     }
+
+            // }
+
+        </script>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let str1="Lê Lê Lê";
+        let str2="L3 Lê L";
+        let length1= str1.length;
+        let length2= str2.length;
+        let count = 0;
+        if(length1==length2){
+            for(let i =0;i<=length1;i++){
+                    if(str1[i]==str2[i]){
+                        count ++;
+                    }
+            }
+        // } else {
+        //     document.write("Hai chuỗi không giống nhau");
+        }
+        if (count == length1 && count == length2){
+            document.write("Hai chuỗi giống nhau");
+        } else {
+            document.write("Hai chuỗi không giống nhau");
+        }
+    </script>
+</body>
+</html>
