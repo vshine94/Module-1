@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [];
+        let b = [];
+        let c = [];
+        a[0] = Math.floor(Math.random() * 11 + 20);
+        for (i = 1; i < 10; i++) {
+            a[i] = Math.floor(Math.random() * 11 + 20);
+            for (j = 0; j < i; j++) {
+                if (a[i] == a[j]) {
+                    a[i] = Math.floor(Math.random() * 11 + 20);
+                    j = 0;
+                }
+            }
+        }
+        b[0] = Math.floor(Math.random() * 11 + 20);
+        for (i = 1; i < 10; i++) {
+            b[i] = Math.floor(Math.random() * 11 + 20);
+            for (j = 0; j < i; j++) {
+                if (b[i] == b[j]) {
+                    b[i] = Math.floor(Math.random() * 11 + 20);
+                    j = 0;
+                }
+            }
+        }
+        c[0] = Math.floor(Math.random() * 11 + 20);
+        for (i = 1; i < 20; i++) {
+            c[i] = Math.floor(Math.random() * 11 + 20);
+            // for (j = 0; j < i; j++) {
+            //     if (c[i] == c[j]) {
+            //         c[i] = Math.floor(Math.random() * 11 + 20);
+            //         j = 0;
+                // }
+            // }
+        }
+        document.write(c+','+a+','+b);
+    </script>
+</body>
+
+</html>

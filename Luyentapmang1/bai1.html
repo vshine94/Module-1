@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [];
+        let b = 0;
+        for (let i = 0; i<10;i++){
+            a[i]=+ prompt("Nhập các phần tử của mảng :");
+            if (a[i] >= 10){
+                b = b+1;
+            }
+        }
+        alert ("Mảng có "+b+" số lớn hơn hoặc bằng 10");
+        document.write(a);
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [];
+        let i, j,tb;
+        let max =0;
+        let sum = 0;
+        let count = 0;
+        a[0] = Math.floor(Math.random() * 11 + 20);
+        for (i = 1; i < 10; i++) {
+            a[i] = Math.floor(Math.random() * 11 + 20);
+            for (j = 0; j < i; j++) {
+                if (a[i] == a[j]) {
+                    a[i] = Math.floor(Math.random() * 11 + 20);
+                }
+                if (a[j] > max) {
+                    max = a[j];
+                    count++
+                }
+            }
+            sum = sum+a[i];
+        }
+        tb = (a[0]+sum)/10;
+        document.write("Phần tử có giá trị lớn nhất là : "+max+ " ở vị trí thứ : "+ count +" trong mảng"+"<br>");
+        document.write("Giá trị trung bình của các phần tử trong mảng : "+tb +"<br>");
+        document.write(a+"<br>");
+    </script>
+</body>
+
+</html>

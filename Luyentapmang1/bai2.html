@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [];
+        let i;
+        let b =0;
+        let max =0;
+        a[0]=+ prompt("Nhập phần tử của mảng :");
+        for (i=1;i<10;i++){
+            for(j=0;j<i;j++){
+                a[i]=+ prompt("Nhập phần tử tiếp theo : ");
+                if (a[j]==a[i]){
+                    a[i]=+prompt("Phần tử bị trùng mời nhập lại :");
+                } 
+            }
+        }
+        for (i=0;i<10;i++){
+            if (a[i]> max ){
+                max = a[i];
+                b++;
+            }
+        }
+            document.write(a+"<br>");
+            document.write("Phần tử có giá trị lớn nhất là : "+max+ " ở vị trí thứ : "+b+" trong mảng")
+    </script>
+</body>
+</html>

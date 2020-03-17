@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [];
+        let i, j;
+        let count = 0;
+        let num =+prompt("Nhập vào số bất kì : ");
+        a[0] = Math.floor(Math.random() * 11 + 20);
+        for (i = 1; i < 10; i++) {
+            a[i] = Math.floor(Math.random() * 11 + 20);
+            for (j = 0; j < i; j++) {
+                if (a[i] == a[j]) {
+                    a[i] = Math.floor(Math.random() * 11 + 20);
+                    j = 0;
+                }
+            }
+            if (a[i]==num){
+                count++;
+            }
+        }
+        if (count>0){
+            document.write(num +" có xuất hiện trong mảng <br>");
+        } else {
+            document.write(num+ "không xuất hiện trong mảng <br>");
+        }
+        document.write(a + "<br>");
+    </script>
+</body>
+</html>

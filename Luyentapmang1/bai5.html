@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let a = [];
+        let i, j;
+        let count = 0;
+        a[0] = Math.floor(Math.random() * 11 + 20);
+        for (i = 1; i < 10; i++) {
+            a[i] = Math.floor(Math.random() * 11 + 20);
+            for (j = 0; j < i; j++) {
+                if (a[i] == a[j]) {
+                    a[i] = Math.floor(Math.random() * 11 - 20);
+                    j = 0;
+                }
+            }
+            if (a[i]<0){
+                count++
+            }
+        }
+        document.write(a + "<br>");
+        document.write("Số nguyên âm là : "+count);
+    </script>
+</body>
+</html>
