@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset style="width: 300px;">
+        <input type="text" id="textbox">
+        <input type="button" id="button1" value="Tìm" onclick="translator()">
+        <div id="output"></div>
+    </fieldset>
+    <script>
+        function translator() {
+            let Eng = ["Red", "Blue", "White", "Yellow", "Green", "Pink", "Black", "Orange"];
+            let Vn = ["Đỏ", "Xanh dương", "Trắng", "Vàng", "Xanh lá", "Hồng", "Đen", "Cam"];
+            let input = document.getElementById("textbox").value;
+            let a = 0;
+            let i;
+            for ( i = 0; i < Eng.length; i++) {
+                if (input == Eng[i]) {
+                    a = a + 1;
+                    break;
+                } else {
+                    a = a + 0;
+                }
+            }
+            if (a > 0) {
+                document.getElementById("output").innerHTML = Vn[i];
+            } else {
+                document.getElementById("output").innerHTML = "Không tìm thấy";
+            }
+        }
+    </script>
+</body>
+
+</html>
