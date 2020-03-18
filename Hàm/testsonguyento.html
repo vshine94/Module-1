@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="inputnumber" placeholder="Number" oninput="main()">
+    <p>Số nguyên tố : <span id="outputsonguyento"></span></p>
+    <script>
+        function enterNumber(num) {
+            return document.getElementById("inputnumber").value;
+        }
+        function checkNumber(num) {
+            // let count = 0;
+            let result = "";
+            // for (i=1;i<=num/2;i++){
+            //     if(num%i == 0){
+            //         count++
+            //     }
+            // }
+            // if (count==1){
+            //     result= num ;
+            // // } else{
+            // //     result="Số "+ num + " không phải là số nguyên tố";
+            // }
+            let a = 1;
+            let i = 0;
+            while (i < num) {
+                a = a + 1;
+                let count = 0;
+                for (let y = 1; y <= a / 2; y++) {
+                    if (a % y == 0) {
+                        count++
+                    }
+                }
+                if (count == 1) {
+                    result += ("  " + a + " , ");
+                    i++;
+                }
+            }
+            return result;
+        }
+        function main() {
+            // let num = parseInt(prompt("Số cần kiểm tra : "));
+            let num = enterNumber();
+            let kq = checkNumber(num);
+            document.getElementById("outputsonguyento").innerHTML = kq;
+        }
+        main();
+    </script>
+</body>
+
+</html>
