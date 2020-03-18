@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>TransferToFeet</h1>
+    <input type="number" id="inputMeters" placeholder="Meters" oninput="main()">
+    <p>Feet : <span id="outputMeters"></span></p>
+    <hr>
+    <h1>TransferToMeters</h1>
+    <input type="number" id="inputFeet" placeholder="Number" oninput="main()">
+    <p>Meters : <span id="outputFeet"></span></p>
+    <script>
+        function enterMeters(number1) {
+            return parseInt(document.getElementById("inputMeters").value);
+        }
+        function enterFeet(number2) {
+            return parseInt(document.getElementById("inputFeet").value);
+        }
+        function transferToFeet(number1) {
+            // let feet = 0;
+            // feet = number1*3.279;
+            return feet = number1*3.279;
+        }
+        function transferToMeters(number2) {
+            // let meters = 0;
+            // meters = number2*0.305;
+            return meters= number2*0.305;
+        }
+        function main() {
+            let number1 = enterMeters();
+            let number2 = enterFeet();
+            let feet = transferToFeet(number1);
+            let meters = transferToMeters(number2);
+            document.getElementById("outputMeters").innerHTML = feet;
+            document.getElementById("outputFeet").innerHTML = meters;
+        }
+        main();
+    </script>
+</body>
+</html>
