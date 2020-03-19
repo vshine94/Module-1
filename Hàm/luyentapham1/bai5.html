@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let star = ["Polaris","Aldebaran","Deneb","Vega","Altair","Dubhe","Regulus"];
+        let morestar= ["Ursa Minor","Tarurus","Cygnus","Lyra","Aquila","Ursa Major","Leo"];
+        function findStar(string) {
+            let result="";
+            for(i=0;i<star.length;i++){
+                if (string == star[i]){
+                    result = "Ngôi sao thuộc chòm "+morestar[i];
+                    break;
+                } else {
+                    result = "Không tìm thấy ngôi sao nào";
+                }
+            }
+            return result;
+        }
+        function main() {
+            let string = prompt("Nhập tên ngôi sao : ");
+            let find = findStar(string);
+            document.write(find);
+        }
+        main();
+    </script>
+</body>
+</html>

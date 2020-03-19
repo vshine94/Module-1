@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sosanhNumber(a,b) {
+            let result;
+            if (a > b){
+                result = alert ("Tham số a lớn hơn tham số b");
+            }else {
+                result = a + b;
+            }
+            return result;
+        }
+        function main() {
+            let a =+ prompt("Nhập vào số a");
+            let b =+ prompt("Nhập vào số b");
+            let kq = sosanhNumber(a,b);
+            document.write(kq);
+        }
+        main();
+    </script>
+</body>
+</html>
