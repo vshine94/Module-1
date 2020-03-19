@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkPar(par) {
+            let result;
+            if (Number.isInteger(par) && par >0){
+                return true;
+            } else {
+                return false;
+            }
+        }
+        function main() {
+            let par =+ prompt("Nhập vào số bất kì cần kiểm tra có phải là số nguyên dương hay không : ");
+            let check = checkPar(par);
+            alert(check);
+        }
+        main();
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function findpar(arr,par) {
+            let count= 0;
+            for(let i=0;i<arr.length;i++){
+                if (arr[i]===par){
+                    count++;
+                }
+            }
+            if (count > 0){
+                return "Số lần xuất hiện của "+par+" là "+count;
+            } else {
+                return -1;
+            }
+        }
+        function enterArr() {
+            let n =+ prompt("Nhập vào số phần tử của mảng : ");
+            let arr = [];
+            for (let i = 0;i<n;i++){
+                arr[i]=+ prompt("Nhập vào phần tử của mảng : ");
+            }
+            return arr;
+        }
+        function main() {
+            let arr = enterArr();
+            let par =+ prompt("Nhập kí tự bất kì cần kiểm tra : ");
+            let result = findpar(arr,par);
+            document.write(result);
+        }
+        main();
+    </script>
+</body>
+</html>

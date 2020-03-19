@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function reverseArray(arr) {
+            let m;
+            let j = arr.length-1;
+            for (let i=0;i<=(arr.length)/2;i++){
+                    m = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = m;
+                    j--;
+            }
+            return arr;
+        }
+        function enterArray() {
+            let n =+ prompt("Nhập vào độ dài mảng : ");
+            let arr = [];
+            for (i=0;i<n;i++){
+                arr[i] =+ prompt("Nhập phần tử số nguyên của mảng : ");
+            }
+            return arr;
+        }
+        function main() {
+            let arr = enterArray();
+            document.write("Trước khi nghịch đảo "+arr +"<br>");
+            let result = reverseArray(arr);
+            document.write("Sau khi nghịch đảo mảng "+arr);
+        }
+        main();
+    </script>
+</body>
+</html>

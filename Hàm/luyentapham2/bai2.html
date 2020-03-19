@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhChuVi(bankinh) {
+            return chuvi = 2*bankinh*Math.PI;
+        }
+        function tinhDienTich(bankinh) {
+            return dientich= bankinh*bankinh*Math.PI;
+        }
+        function main() {
+            let bankinh = parseFloat(prompt("Nhập vào bán kính đường tròn cần tính : "));
+            let chuvihinhtron = tinhChuVi(bankinh);
+            let dientichhinhtron = tinhDienTich(bankinh);
+            document.write("Chu vi hình tròn là "+chuvihinhtron+"<br>");
+            document.write("Diện tích hình tròn là "+dientichhinhtron+"<br>");
+        }
+        main();
+    </script>
+</body>
+</html>

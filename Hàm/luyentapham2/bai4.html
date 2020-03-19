@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checkPar(par) {
+            let result;
+            return result = Number.isInteger(par);
+        }
+        function main() {
+            let par =+ prompt("Nhập vào kí tự bất kì cần kiểm tra có phải là số hay không : ");
+            let check = checkPar(par);
+            alert(check);
+        }
+        main();
+    </script>
+</body>
+
+</html>

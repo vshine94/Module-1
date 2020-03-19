@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function enterNumber() {
+            let number =+ prompt("Nhập số : ");
+            return number;
+        }
+        function doichoNumber(a,b) {
+            let c = a;
+            a = b;
+            b = c;
+            return a+" và "+b;
+        }
+        function main() {
+            let a = enterNumber();
+            let b = enterNumber();
+            document.write(a+" và "+b);
+            let result = doichoNumber(a,b);
+            document.write("Sau khi đổi chỗ "+result);
+        }
+        main();
+    </script>
+</body>
+</html>

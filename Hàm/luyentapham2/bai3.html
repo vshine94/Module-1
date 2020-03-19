@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function tinhGiaiThua(number) {
+            let result=1;
+            for (i=1;i<=number;i++){
+                result = result*i;
+            }
+            return result;
+        }
+        function main() {
+            let number =+ prompt("Nhập vào số cần tính giai thừa");
+            let giaithua= tinhGiaiThua(number);
+            document.write("Giai thừa của "+number+" là "+giaithua);
+        }
+        main();
+    </script>
+</body>
+</html>
