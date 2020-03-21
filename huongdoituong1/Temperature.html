@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <fieldset style="width: 500px;">
+        <h1>Chuyển đổi nhiệt độ</h1>
+        <input type="number" id="input" placeholder="0 Độ C" oninput="main()">
+        <p><span id="output1"></span></p>
+        <p><span id="output2"></span></p>
+    </fieldset>
+    <script>
+        class Temperature {
+            constructor(numc) {
+                this.doC = numc;
+            }
+            transferCtoF() {
+                let CtoF =+ this.doC * 1.8 + 32;
+                return "Nhiệt độ sau khi chuyển từ độ C sang F là : " + CtoF + " độ F";
+            }
+            transferCtoK() {
+                let CtoK =+ this.doC + 273.15;
+                return "Nhiệt độ sau khi chuyển từ đồ C sang K là : " + CtoK + " độ K";
+            }
+        }
+        function enterC() {
+            return document.getElementById("input").value;
+        }
+        function main() {
+            let c = new Temperature(enterC());
+            let ctof = c.transferCtoF();
+            let ctok = c.transferCtoK();
+            document.getElementById("output1").innerHTML = ctof +"<br>";
+            document.getElementById("output2").innerHTML = ctok +"<br>";
+        }
+        main();
+    </script>
+</body>
+
+</html>
